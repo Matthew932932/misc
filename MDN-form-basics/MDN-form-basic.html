@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDN forms basics</title>
+  <link rel="stylesheet" href="MDN-form-basic.css">
+</head>
+
+<body>
+  <form action="/my-handling-form-page" method="post">
+    <p>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name" />
+    </p>
+    <p>
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="user_email" />
+    </p>
+    <p>
+      <label for="msg">Message:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </p>
+    <p>
+      <input type="text" value="by default this element is filled with this text" />
+    </p>
+    <textarea>
+            by default this element is filled with this text
+        </textarea>
+    <p class="button">
+      <button type="submit">Send your message</button>
+    </p>
+
+    <label for="price">Choose a maximum house price: </label>
+    <input type="range" 
+    name="price" 
+    id="price" 
+    min="50000" 
+    max="500000" 
+    step="1000" 
+    value="250000" />
+    <output class="price-output" for="price"></output>
+
+
+  </form>
+
+  <script src="MDN-form-basics.js"></script> 
+</body>
+
+</html>

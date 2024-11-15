@@ -1,0 +1,74 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+
+form>div {
+    margin-bottom: 20px;
+}
+
+button,
+label,
+input,
+select,
+progress,
+meter {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+}
+
+select {
+    appearance: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "▼";
+    font-size: 1rem;
+    top: 6px;
+    right: 10px;
+    position: absolute;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="color"],
+select {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+button {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* input[type="range"] {
+    appearance: none;
+    background: red;
+    height: 2px;
+    padding: 0;
+    outline: 1px solid transparent;
+  } */
+
+  /* input[type="color"] {
+    border: 0;
+    padding: 0;
+  } */
+  
+  
